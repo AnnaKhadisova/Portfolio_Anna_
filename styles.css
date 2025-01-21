@@ -1,0 +1,121 @@
+/* General Styles */
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  background: url('https://via.placeholder.com/1920x1080') no-repeat center center fixed;
+  background-size: cover;
+  animation: background-animation 10s infinite alternate;
+}
+
+/* Animations */
+@keyframes background-animation {
+  0% { filter: brightness(1); }
+  100% { filter: brightness(0.9); }
+}
+
+/* Header Section */
+.header-section {
+  background-color: #add8e6;
+  color: #003366;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.header-section h1 {
+  font-size: 3rem;
+  font-family: 'Raleway', sans-serif;
+  animation: fade-in 2s ease-in-out;
+}
+
+/* Profile Section */
+.profile-section {
+  padding: 30px 0;
+  background-color: pink;
+}
+
+.profile-pic-wrapper {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 5px solid #add8e6;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.profile-pic {
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 0.1%; /* Adjusts the picture slightly lower */
+  object-fit: cover;
+  animation: profile-pop 1s ease-out;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  padding: 50px 0;
+}
+
+.portfolio-video {
+  width: 100%;
+  height: 250px; /* Reduced height for videos */
+  border: 5px solid #add8e6;
+  border-radius: 10px;
+  animation: fade-in 1.5s ease-in-out;
+}
+
+.description-box {
+  background-color: #e6f7ff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.description-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Links Section */
+.links-section {
+  padding: 40px 0;
+  background-color: #e6f7ff;
+}
+
+.links-section h2 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
+  color: #003366;
+}
+
+.links-section a {
+  color: #0056b3;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-family: 'Playfair Display', serif;
+  transition: color 0.3s ease-in-out;
+}
+
+.links-section a:hover {
+  color: #003366;
+}
+
+/* Footer Section */
+.footer-section {
+  background-color: #add8e6;
+  color: #003366;
+}
+
+/* Utility */
+.fade-in {
+  animation: fade-in 1s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
